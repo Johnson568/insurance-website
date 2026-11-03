@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Estonia&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+   <link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg" />
+<link rel="shortcut icon" href="images/favicon/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+<link rel="manifest" href="images/favicon/site.webmanifest" />
+</head>
+<body>
+    <header>
+    <a href="/" class="logo">
+        <img src="images/IMG-20260822-WA0040.jpg" alt="Company logo">
+    </a>
+
+    <button class="menu-toggle" id="menu-toggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="primary-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav class="links" id="primary-nav">
+        <a href="#how-we-work">How we work</a>
+        <a href="#blog">Blog</a>
+        <a href="#view-plans" class="link-button">View plans</a>
+    </nav>
+</header>
+    <main>
+        <section class="hero">
+            <div class="hero-left">
+                <span></span>
+                <h1>Humanizing your insurance.</h1>
+                <p>Get your life insurance coverage easier and faster. We blend our expertise and teaching to help you find the plan that's right for you. Ensure you and your loved ones are protected.</p>
+                <a href="#view-plans" class="link white button">View plans</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/IMG-20260822-WA0043 (1).jpg" alt="company image 1">
+            </div>
+        </section>
+        <section class="differences" id="how-we-work">
+            <h2>We're different</h2>
+            <div class="features">
+                <article class="feature">
+                    <img src="images/bold-black-lightning-bolt-icon-with-shadow-vector.webp" alt="snappy" aria-hidden="true">
+                    <h3>Snappy Process</h3>
+                    <p>Our application process can be completed in minutes, not hours. Don't get stuck filling in tedious forms.</p>
+                    </article>
+                    <article class="feature">
+                        <img src="images/dollar_sign_PNG33.png" alt="price" aria-hidden="true">
+                        <h3>Affordable Prices</h3>
+                        <p>We don't want you worrying about high monthly costs. Our prices may be low, but we still offer the best coverage possible.</p>
+                    </article>
+                    <article class="feature">
+                    <img src="images/Profile-PNG-Photo.png" alt="people" aria-hidden="true">
+                    <h3>People's First</h3>
+                    <p>Our plans aren't full of conditions and clauses to prevent payouts. We make sure you're covered when you need it.</p>
+                    </article>
+            </div>
+        </section>
+        <section class="cta">
+            <h2>Find out more about how we work</h2>
+            <a href="#how-we-work">HOW WE WORK</a>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-top">
+            <a href="#" aria-label="Insure home">INSURE</a>
+            <nav aria-label="social media links">
+                <ul>
+                    <li><a href="#" aria-label="Facebook">Facebook</a>
+                    <img src="images/1000882766-removebg-preview.png" alt=""></li>
+                     <li><a href="#" aria-label="Twitter">Twitter</a>
+                    <img src="images/1000883097-removebg-preview.png" alt=""></li>
+                        <li><a href="#" aria-label="Pintrest">Pintrest</a>
+                        <img src="images/1000882771-removebg-preview.png" alt=""></li>
+                         <li><a href="" aria-label="Instagram">Instagram</a>
+                        <img src="images/1000882775-removebg-preview.png" alt=""></li>
+                </ul>
+            </nav>
+        </div>
+<div class="footer-links">
+    <div class="footer-column">
+        <h3>OUR COMPANY</h3>
+        <ul>
+            <li><a href="#">WHY INSURE</a></li>
+             <li><a href="#view-plans">VIEW PLANS</a></li>
+              <li><a href="#">REVIEWS</a></li>
+        </ul>
+    </div>
+    <div class="footer-column">
+        <h3>HELP ME</h3>
+        <ul>
+            <li><a href="#">TERMS OF USE</a></li>
+            <li><a href="#">PRIVACY POLICY</a></li>
+            <li><a href="#">COOKIES</a></li>
+        </ul>
+    </div>
+    <div class="footer-column">
+        <h3>CONTACT</h3>
+        <ul>
+            <li><a href="#">SALES</a></li>
+            <li><a href="#">SUPPORT</a></li>
+            <li><a href="#">LIVE CHAT</a></li>
+        </ul>
+    </div>
+    <div class="footer-column">
+        <h3>OTHERS</h3>
+        <ul>
+            <li><a href="#">CAREERS</a></li>
+            <li><a href="#">PRESS</a></li>
+            <li><a href="#">LICENSES</a></li>
+        </ul>
+    </div>
+</div>
+    </footer>
+<script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const header = document.querySelector("header");
+
+    menuToggle.addEventListener("click", function () {
+        header.classList.toggle("menu-open");
+
+        const isOpen = header.classList.contains("menu-open");
+
+        menuToggle.setAttribute("aria-expanded", isOpen);
+        menuToggle.setAttribute(
+            "aria-label",
+            isOpen ? "Close navigation menu" : "Open navigation menu"
+        );
+    });
+</script>
+</body>
+</html>
